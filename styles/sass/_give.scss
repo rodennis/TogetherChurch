@@ -1,0 +1,183 @@
+@import "./variables";
+@import "./fonts";
+
+
+.giveContainer {
+  .giveBanner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      width: 100vw;
+    }
+
+    h1 {
+      position: absolute;
+      font-size: 9.75rem;
+      color: white;
+      font-family: "tommy-bold-outline";
+    }
+  }
+
+  .giveWhy {
+    background-color: $primary;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 3rem;
+
+    h2 {
+      font-family: "tommy-regular";
+      font-size: 2.5rem;
+      color: $secondary;
+      margin: 0 0 1rem 0;
+    }
+
+    p {
+      color: white;
+      width: 30rem;
+      line-height: 2rem;
+      font-size: 1.25rem;
+      margin: 20px 0 0 0;
+      font-family: 'tommy-thin';
+    }
+  }
+
+  .giveOnline {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 3rem;
+
+    h2 {
+      font-size: 2.5rem;
+      color: $primary;
+      margin: 0 0 1rem 0;
+      font-family: "tommy-regular";
+    }
+
+    p {
+      width: 30rem;
+      line-height: 1.5rem;
+      color: $primary;
+      margin: 20px 0 40px 0;
+      font-family: "tommy-thin";
+    }
+
+    button {
+      background-color: $secondary;
+      border-radius: 0.5rem;
+      border-style: none;
+      color: white;
+      width: 10rem;
+      cursor: pointer;
+      position: relative;
+      padding: 0.75rem 0.25rem 0.75rem 2rem;
+      font-size: 1rem;
+      letter-spacing: .15rem;
+      font-family: 'tommy-thin';
+
+      .dollarCoinImgDiv {
+        width: 1.5rem;
+        position: absolute;
+        left: 0.6rem;
+        bottom: 0.3rem;
+      }
+
+      &:hover {
+        background-color: $primary;
+      }
+    }
+  }
+
+  .inPersonGive {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 3rem 0 2rem 0;
+    background-color: #eee;
+
+    h2 {
+      font-size: 2.5rem;
+      color: $primary;
+      margin: 0 0 1rem 0;
+      font-family: "tommy-regular";
+    }
+
+    p {
+      width: 30rem;
+      line-height: 1.5rem;
+      color: $primary;
+      margin: 20px 0 0 0;
+      font-family: 'tommy-thin';
+    }
+
+    img {
+      width: 10rem;
+    }
+  }
+
+  .textToGive {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 3rem;
+
+    h2 {
+      font-size: 2.5rem;
+      color: $primary;
+      margin: 0 0 1rem 0;
+      font-family: "tommy-regular";
+    }
+
+    p {
+        font-size: .75rem;
+        font-family: 'tommy-thin';
+    }
+
+    .textToGiveBottom {
+      display: flex;
+      justify-content: space-between;
+
+      
+      .textToGiveBottomLeft {
+        flex: 1;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+        p {
+          z-index: 100;
+          position: absolute;
+          width: 13rem;
+          margin-left: 1.25rem;
+          font-family: 'tommy-regular';
+        }
+
+        .messageBubble {
+          width: 25rem;
+        }
+      }
+
+      .textToGiveBottomRight {
+        flex: 1;
+        
+        h6 {
+          padding: 0 8rem 0 8rem;
+          font-size: 1rem;
+          font-family: 'tommy-thin';
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,35 @@
+@import './variables';
+@import './fonts';
+
+.navList {
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-evenly;
+    list-style-type: none;
+    position: relative;
+    height: 5rem;
+
+    li {
+        margin-top: 2rem;
+        font-size: 1.125rem;
+        color: $primary;
+        font-family: 'tommy-thin';
+
+        .navLink {
+        text-decoration: none;
+        }
+        
+        &:hover {
+            color: $secondary;
+        }
+    }
+
+    .navLogo {
+        width: 3rem;
+        position: absolute;
+        left: 2rem;
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,11 @@
+@import "./sass/about";
+@import "./sass/footer";
+@import "./sass/give";
+@import "./sass/home";
+@import "./sass/navbar";
+
+.layoutContainer {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}

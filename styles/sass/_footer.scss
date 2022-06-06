@@ -1,0 +1,50 @@
+@import "./variables";
+@import "./fonts";
+
+.footerContainer {
+  display: flex;
+  flex-direction: column;
+  margin-top: auto;
+  background-color: $primary;
+
+  .footerTopDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 3rem 0 3rem 0;
+
+    h2 {
+      font-family: "tommy-regular";
+      font-size: 1.125rem;
+      color: white;
+    }
+
+    p {
+      font-family: "tommy-thin";
+      color: $secondary;
+    }
+
+    .footerLeftDiv {
+    }
+  
+    .footerRightDiv {
+        text-align: center;
+
+        a {
+            width: 3rem;
+            height: 3rem;
+            display: inline-block;
+            cursor: pointer;
+        }
+    }
+}
+
+
+  .footerBottomDiv {
+    display: flex;
+    justify-content: center;
+    font-size: 0.5rem;
+    font-family: "tommy-thin";
+    color: white;
+  }
+}
