@@ -1,35 +1,88 @@
 @import './variables';
 @import './fonts';
 
-.navList {
-    padding: 0px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    justify-content: space-evenly;
-    list-style-type: none;
-    position: relative;
-    height: 5rem;
+nav {
+    ul {
+        width: 100%;
 
-    li {
-        margin-top: 2rem;
-        font-size: 1.125rem;
-        color: $primary;
-        font-family: 'tommy-thin';
+        li {
+            font-size: 1.125rem;
+            color: $primary;
+            font-family: 'tommy-thin';
+            cursor: pointer;
+    
+            .navLink {
+            text-decoration: none;
+            }
+            
+            &:hover {
+                color: $secondary;
+            }
+        }
 
-        .navLink {
-        text-decoration: none;
-        }
-        
-        &:hover {
-            color: $secondary;
-        }
     }
 
     .navLogo {
-        width: 3rem;
-        position: absolute;
-        left: 2rem;
         cursor: pointer;
+        width: 4rem;
+        height: 4rem;
+        margin-left: 2rem;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+}
+
+@media (max-width: 992px) {
+    nav {
+        position: relative;
+        height: 5rem;
+        ul {
+            width: auto;
+            position: relative;
+            top: 2rem;
+            right: 0;
+            background-color: $secondary;
+            width: 100%;
+            text-align: center;
+            z-index: 1;
+
+            li {
+                margin: 2rem 0; 
+
+                &:hover {
+                    color: white;
+                }
+            }
+        }  
+        
+        .open {
+            display: block;
+            animation: fadeIn .5s;
+        }
+
+        .closed {
+            display: none;
+        }
+
+        .hamburger {
+            display: block;
+            width: 2rem;
+            height: 2rem;
+            right: 1rem;
+            top: 1.5rem;
+            cursor: pointer;
+        }
+
+        .navLogo {
+            width: 2.5rem;
+            height: 2.5rem;
+        }
     }
 }
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }

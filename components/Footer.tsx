@@ -32,8 +32,8 @@ export const Footer = () => {
             </a>
         </div>
         </div>
-        <div className="footerBottomDiv">
-            <h2>© 2022 Together Church. All rights reserved.</h2>
+        <div className="footerBottomDiv mb-4">
+            <h2 className='fs-6'>© 2022 Together Church. All rights reserved.</h2>
         </div>
     </footer>
   )

@@ -45,6 +45,30 @@
     justify-content: center;
     font-size: 0.5rem;
     font-family: "tommy-thin";
-    color: white;
+    color: white; 
+
   }
 }
+
+@media (max-width: 992px) {
+  .footerContainer {
+    .footerTopDiv {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+       h2 {
+        margin-bottom: 1.5rem;
+        font-size: 1.5rem;
+       }
+
+      .footerLeftDiv {
+        text-align: center;
+      }
+
+      .footerMiddleDiv {
+        text-align: center;
+        margin: 2rem 0;
+      }
+    }
+  } 
+ }

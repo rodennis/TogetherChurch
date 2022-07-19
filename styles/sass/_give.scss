@@ -181,3 +181,55 @@
     }
   }
 }
+
+@media (max-width: 992px) {
+  .giveContainer {
+    .giveBanner {
+      h1 {
+        font-size: 2rem;
+      }
+    }
+
+    .giveWhy {
+      p {
+        width: 100vw;
+        padding: .25rem;
+      }
+    }
+
+    .giveOnline {
+      
+      p {
+        width: 100vw;
+        padding: .25rem;
+      }
+    }
+
+     
+      .inPersonGive {
+        p {
+          padding: .25rem;
+          width: 100vw;
+        }
+      }
+
+      .textToGive {
+        .textToGiveBottom {
+          flex-direction: column;
+          width: 100vw;
+
+          .textToGiveBottomLeft {
+            .messageBubble {
+              width: 100vw;
+            }
+          }
+
+          .textToGiveBottomRight {
+            h6 {
+              padding: 1rem;
+            }
+          }
+        }
+      }
+  }
+ }

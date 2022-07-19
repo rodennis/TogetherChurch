@@ -19,9 +19,25 @@
     font-size: 1rem;
     color: $primary;
   }
-
-//   .testdiv {
-//       height: 600px;
-//       background-color: red;
-//   }
 }
+
+@media (max-width: 992px) {
+ .homeContainer {
+  h1 {
+    font-size: 3.5rem;
+  }
+ } 
+}
+
+@media (max-width: 640px) {
+  .homeContainer {
+   h1 {
+     font-size: 2.5rem;
+     margin-top: 2rem;
+   }
+
+   p {
+    margin: 1rem;
+   }
+  } 
+ }
